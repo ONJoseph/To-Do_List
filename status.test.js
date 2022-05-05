@@ -1,4 +1,4 @@
-const LocalStorageMock = require('./__mock__/status');
+const LocalStorageMock = require('./__mock__/status.js');
 
 describe('Local storage test', () => {
   const localStore = new LocalStorageMock();
