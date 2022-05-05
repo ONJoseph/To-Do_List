@@ -24,4 +24,4 @@ const addNew = () => {
   return result;
 };
 
-export default addNew;
+module.exports = addNew;

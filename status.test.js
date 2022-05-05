@@ -1,4 +1,4 @@
-import LocalStorageMock from '../__mocks__/status.js';
+const LocalStorageMock = require ('./__mock__/status')
 
 describe('Local storage test', () => {
   const localStore = new LocalStorageMock();

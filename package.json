@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
     "build": "webpack"
@@ -22,8 +22,13 @@
   },
   "homepage": "https://github.com/ONJoseph/To-Do_List#readme",
   "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "babel-jest": "^28.0.3",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.0.3",
+    "jest-environment-jsdom": "^28.0.2",
     "style-loader": "^3.3.1",
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2",

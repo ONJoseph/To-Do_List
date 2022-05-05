@@ -30,4 +30,4 @@ const removeItem = () => {
   return result;
 };
 
-export default removeItem;
+module.exports = removeItem;
