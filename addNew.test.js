@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-const addNew = require('./__mock__/addNew.js');
+const addNew = require('./__mock__/addNew');
 
 describe('Testing addNew To Do task function', () => {
   test('Check the number of elements added, should be 1', () => {

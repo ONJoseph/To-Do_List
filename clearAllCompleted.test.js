@@ -3,8 +3,13 @@
  */
 
 // eslint-disable-next-line import/named
-import { createCompleted, checkedItem, btnClear } from '../__mocks__/clearAllCompleted.js';
-import LocalStorageMock from '../__mocks__/status.js';
+// import { createCompleted, checkedItem, btnClear } from '../__mocks__/clearAllCompleted.js';
+// import LocalStorageMock from '../__mocks__/status.js';
+
+const createCompleted = require('./__mock__/clearAllCompleted');
+const checkedItem = require('./__mock__/clearAllCompleted');
+const btnClear = require('./__mock__/clearAllCompleted');
+const LocalStorageMock = require('./__mock__/status');
 
 const localStore = new LocalStorageMock();
 localStore.setItem('storedToDoList', []);

@@ -23,5 +23,4 @@ const addNew = () => {
   result[1] = newItem.value;
   return result;
 };
-
-export default addNew;
+module.exports = addNew;

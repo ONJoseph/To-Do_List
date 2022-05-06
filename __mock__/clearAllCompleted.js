@@ -1,4 +1,4 @@
-import LocalStorageMock from './status.js';
+const LocalStorageMock = require('./status.js');
 
 const localStore = new LocalStorageMock();
 const toDoItems = [];
@@ -62,5 +62,6 @@ const btnClear = () => {
   clear[1] = toDoItems.length;
   return clear;
 };
-
-module.exports = { createCompleted, checkedItem, btnClear };
+module.exports = createCompleted ;
+module.exports = checkedItem ;
+module.exports = btnClear;
