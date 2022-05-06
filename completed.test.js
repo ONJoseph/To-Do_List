@@ -1,7 +1,4 @@
-// import LocalStorageMock from '../__mocks__/status.js';
-// import { check, completedItem } from '../__mocks__/completed.js';
 // eslint-disable-next-line import/named
-
 
 const check = require('./__mock__/completed');
 const completedItem = require('./__mock__/completed');

@@ -21,15 +21,15 @@ const toDoDiv2 = document.createElement('div');
 const createCompleted = () => {
   // Created two DOM items
   document.body.innerHTML = `
-    <form class="add-new white-height">
-      <input class="no-outline" maxlength="128"
-        id="new-item"
-        type="text"
-        placeholder="Add to your list ..."
+    <form class='add-new white-height'>
+      <input class='no-outline' maxlength='128'
+        id='new-item'
+        type='text'
+        placeholder='Add to your list ...'
       />
-      <i class="fas fa-level-down-alt"></i>
+      <i class='fas fa-level-down-alt'></i>
     </form>
-    <div class="full-list"></div>
+    <div class='full-list'></div>
   `;
   // Created the first DOM item
   const firstItem = document.getElementById('new-item');
@@ -62,6 +62,6 @@ const btnClear = () => {
   clear[1] = toDoItems.length;
   return clear;
 };
-module.exports = createCompleted ;
-module.exports = checkedItem ;
+module.exports = createCompleted;
+module.exports = checkedItem;
 module.exports = btnClear;
