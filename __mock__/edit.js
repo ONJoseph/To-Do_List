@@ -1,4 +1,4 @@
-import LocalStorageMock from './status.js';
+const LocalStorageMock = require('./status.js');
 
 const edit = () => {
   document.body.innerHTML = `
@@ -36,4 +36,4 @@ const edit = () => {
   return result;
 };
 
-export default edit;
+module.exports = edit;

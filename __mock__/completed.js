@@ -1,4 +1,4 @@
-import LocalStorageMock from './status.js';
+const LocalStorageMock = require('./status.js');
 
 const localStore = new LocalStorageMock();
 const toDoItems = [];
@@ -20,4 +20,5 @@ const check = () => {
   return toDoItems[0].completed;
 };
 
-module.exports = { check, completedItem };
+module.exports = { check };
+module.exports = { completedItem };
