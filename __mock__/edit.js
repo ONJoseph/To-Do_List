@@ -1,4 +1,6 @@
-const addNew = () => {
+import LocalStorageMock from './status.js';
+
+const edit = () => {
   document.body.innerHTML = `
     <form class="add-new white-height">
       <input class="no-outline" maxlength="128"
@@ -17,11 +19,21 @@ const addNew = () => {
   toDoDiv.innerText = newItem.value;
   const fullList = document.querySelector('.full-list');
   fullList.appendChild(toDoDiv);
+  // Edit the first item, mocks edit function
+  newItem.value = 'Second';
+  toDoDiv.innerText = newItem.value;
   const toDoDivsAll = document.querySelectorAll('.todo-item');
   const result = [];
+  // Save the changed item in the localStorage
+  const localStore = new LocalStorageMock();
+  const toDoItems = [];
+  localStore.setItem('storedToDoList', []);
+  const firstTask = { description: 'Second', completed: false, index: 0 };
+  toDoItems.push(firstTask);
+  localStore.setItem('storedToDoList', toDoItems);
   result[0] = toDoDivsAll.length;
   result[1] = newItem.value;
   return result;
 };
 
-export default addNew;
+export default edit;
