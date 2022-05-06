@@ -10,7 +10,7 @@ describe('Testing edit function', () => {
     expect(addNew[1]).not.toBeNull();
   });
 
-  test('Check if the name have changed. It is now 'Second'', () => {
+  test('Check if the name have changed. It is now Second', () => {
     expect(edit[1]).not.toBe('First');
   });
 
