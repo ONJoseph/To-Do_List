@@ -4,8 +4,10 @@
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "main": "index.js",
   "private": true,
+  "type":"module",
   "scripts": {
     "test": "jest",
+    "test-coverage": "jest --coverage",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
     "build": "webpack"
