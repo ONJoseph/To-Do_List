@@ -4,6 +4,7 @@ describe('Local storage test', () => {
   const localStore = new LocalStorageMock();
   const toDoItems = [];
   localStore.setItem('storedToDoList', []);
+
   test('Saving the first to do task to the storage', () => {
     const firstTask = { description: 'First', completed: false, index: 0 };
     toDoItems.push(firstTask);
