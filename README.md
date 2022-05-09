@@ -37,7 +37,7 @@ Things done so far:
 
 ## Live Demo
 
-[Online Version Link](https://onjoseph.github.io/To-Do_List/)
+[Online Version Link](https://onjoseph.github.io/To-Do_List/dist)
 
 ## Getting Started
 
