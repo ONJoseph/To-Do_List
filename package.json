@@ -8,6 +8,7 @@
     "test": "jest",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
+    "deploy": "gh-pages -d dist",
     "build": "webpack"
   },
   "repository": {
@@ -20,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/ONJoseph/To-Do_List/issues"
   },
-  "homepage": "https://github.com/ONJoseph/To-Do_List#readme",
+  "homepage": "https://github.com/ONJoseph/To-Do_List",
   "devDependencies": {
     "@babel/core": "^7.17.10",
     "@babel/preset-env": "^7.17.10",
@@ -35,6 +36,7 @@
     "webpack-dev-server": "^4.9.0"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "lodash": "^4.17.21"
   }
 }
